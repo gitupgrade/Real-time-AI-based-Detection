@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Safe Browsing Guardian",
+  "version": "1.0.0",
+  "description": "Automatically checks websites using Google Safe Browsing API and displays safety status",
+  
+  "permissions": [
+    "webNavigation",
+    "tabs",
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  
+  "host_permissions": [
+    "https://safebrowsing.googleapis.com/*",
+    "<all_urls>"
+  ],
+  
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"],
+      "run_at": "document_end",
+      "exclude_matches": []
+    }
+  ],
+  
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
