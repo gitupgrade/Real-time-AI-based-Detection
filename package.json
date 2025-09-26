@@ -1,0 +1,22 @@
+{
+    "name": "safe-browsing-guardian",
+    "version": "1.0.0",
+    "description": "Chrome extension that automatically checks website safety using Google Safe Browsing API",
+    "scripts": {
+      "build": "echo 'Chrome extension ready for loading'",
+      "dev": "echo 'Load extension in Chrome at chrome://extensions/ with Developer Mode enabled'"
+    },
+    "keywords": [
+      "chrome-extension",
+      "security",
+      "safe-browsing",
+      "malware-protection",
+      "phishing-protection"
+    ],
+    "author": "Group 50",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": ""
+    }
+  }
